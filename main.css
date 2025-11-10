@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family:  'Arial', sans-serif;
 }
 
 .app {
@@ -14,7 +14,7 @@
 }
 
 .calculator {
-	background-color: #22252D;
+	background-color: #1c1c1c;
 	width: 100%;
 	max-width: 375px;
 	min-height: 600px;
@@ -22,6 +22,7 @@
 	flex-direction: column;
 	border-radius: 1.5rem;
 	overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .display {
@@ -46,19 +47,20 @@
 
 .display .input {
 	width: 100%;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	margin-bottom: 0.5rem;
+  color: #a3a3a3;
 }
 
 .display .output {
-	font-size: 3rem;
+	font-size: 2.63rem;
 	font-weight: 700;
 	width: 100%;
 	white-space: nowrap;
 }
 
 .display .operator {
-	color: #EB6666;
+	color: white;
 }
 
 .display .brackets,
@@ -102,12 +104,15 @@
 }
 
 .keys .key:hover {
-	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 0px 8px dimgray;
 }
 
 .keys .key.operator span {
 	color: white;
     
+}
+.display.key.operator {
+    background-color: orangered;
 }
 
 .keys .key.action span {

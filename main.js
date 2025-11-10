@@ -62,7 +62,7 @@ function CleanInput(input) {
 			input_array[i] = ` <span class="operator">-</span> `;
 		} else if (input_array[i] == "(") {
 			input_array[i] = `<span class="brackets">(</span>`;
-		} else if (input_array[i] == ")") {
+		} else if (input_array[i] == "") {
 			input_array[i] = `<span class="brackets">)</span>`;
 		} else if (input_array[i] == "%") {
 			input_array[i] = `<span class="percent">%</span>`;
