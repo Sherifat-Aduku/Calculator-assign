@@ -1,9 +1,8 @@
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family:  'Arial', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 .app {
@@ -22,7 +21,7 @@
 	flex-direction: column;
 	border-radius: 1.5rem;
 	overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .display {
@@ -41,7 +40,6 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	width: 100%;
-	max-width: 100%;
 	overflow: auto;
 }
 
@@ -49,7 +47,7 @@
 	width: 100%;
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
-  color: #a3a3a3;
+	color: #a3a3a3;
 }
 
 .display .output {
@@ -57,15 +55,6 @@
 	font-weight: 700;
 	width: 100%;
 	white-space: nowrap;
-}
-
-.display .operator {
-	color: white;
-}
-
-.display .brackets,
-.display .percent {
-	color: #26FED7;
 }
 
 .keys {
@@ -82,7 +71,6 @@
 .keys .key {
 	position: relative;
 	cursor: pointer;
-
 	display: block;
 	height: 0;
 	padding-top: 100%;
@@ -90,6 +78,8 @@
 	border-radius: 1rem;
 	transition: 0.2s;
 	user-select: none;
+	border: none;
+	outline: none;
 }
 
 .keys .key span {
@@ -97,7 +87,6 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-
 	font-size: 2rem;
 	font-weight: 700;
 	color: #FFF;
@@ -107,14 +96,7 @@
 	box-shadow: inset 0px 0px 8px dimgray;
 }
 
-.keys .key.operator span {
-	color: white;
-    
-}
-.display.key.operator {
-    background-color: orangered;
-}
-
+.keys .key.operator span,
 .keys .key.action span {
 	color: white;
 }
