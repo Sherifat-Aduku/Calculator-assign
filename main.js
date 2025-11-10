@@ -16,6 +16,13 @@ for (let key of keys) {
 			input = input.slice(0, -1);
 			display_input.innerHTML = CleanInput(input);
 		} else if (value == "=") {
+			function evaluate(expression) {
+          try {
+          return Function('"use strict"; return (' + expression + ')')();
+          } catch {
+          return "Error";
+          }
+			}
 			let result = evaluate(PerpareInput(input));
 
 			display_output.innerHTML = CleanOutput(result);
